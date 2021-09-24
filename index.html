@@ -8,11 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="top">
+    <div id="top" class="tab">
         <div>TIMEBOM</div>
-        <img src="img/card.png" alt="">
+        <img src="img/success.png" alt="">
+        <img src="img/safe.png" alt="">
         <img src="img/bom.png" alt="">
-        <div id="start-btn">START</div>
+        <img src="img/swat.png" alt="">
+        <img src="img/terrorist.png" alt="">
+        <p>ブラウザでタイムボム！</p>
+        <div id="start-btn" class="btn">START</div>
+    </div>
+
+    <div id="setting" class="hidden">
+        <p>名前を入力してください</p>
+        <form action="">
+            <input type="text" value="プレイヤー1">
+            <input type="text" value="プレイヤー2">
+            <input type="text" value="プレイヤー3">
+            <input type="text" value="プレイヤー4">
+            <input type="submit" value="決定" id="nameend">
+        </form>
     </div>
     <script src="main.js"></script>
 </body>
