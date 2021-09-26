@@ -98,7 +98,7 @@
             const confirmTab = document.createElement('div');
             confirmTab.classList.add('confirmTab');
             const p = document.createElement('p');
-            p.innerText = '役職と手札を表示します\nよろしいですか？\n\n\n\n\n'
+            p.innerText = '役職と手札を表示します\nよろしいですか？\n\n\n'
             confirmTab.appendChild(p);
             const container = document.createElement('div');
             const cancelBtn = document.createElement('div');
@@ -169,7 +169,7 @@
         }
         startConfirm(){
             const tab = document.createElement('div');
-            tab.innerText = '[議論開始]を押すとゲームが開始されます。\n端末を全プレイヤーが見える場所に置いて[議論開始]を押してください';
+            tab.innerText = '[議論開始]を押すとゲームが開始されます。\n端末を全プレイヤーが見える場所に置いて[議論開始]を押してください\n\n\n\n\n';
             const btn = document.createElement('div');
             btn.innerText = '議論開始';
             tab.appendChild(btn);
@@ -266,9 +266,11 @@
                         img.src = 'img/bom.png';
                     }
                     const btn = document.createElement('div');
-                    btn.classList.add('btn');
-                    btn.innerText = '次へ';
-                    tab.appendChild(btn);
+                    setTimeout(()=>{
+                        btn.classList.add('btn');
+                        btn.innerText = '次へ';
+                        tab.appendChild(btn);
+                    },1000);
                     btn.addEventListener('click',()=>{
                         tab.remove();
                         if(this.playerCard[m][v] === 1){
